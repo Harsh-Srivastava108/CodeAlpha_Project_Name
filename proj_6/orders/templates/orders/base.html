@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav a { margin-right: 15px; }
+    </style>
+</head>
+<body>
+    <h1>🍽️ Restaurant Management</h1>
+    <nav>
+        <a href="{% url 'menu' %}">Menu</a>
+        <a href="{% url 'place_order' %}">Place Order</a>
+        <a href="{% url 'daily_sales' %}">Daily Sales</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
